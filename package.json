@@ -1,9 +1,9 @@
 {
   "name": "nextjs-fastapi",
-  "version": "0.1.0",
+  "version": "0.115.0",
   "private": true,
   "scripts": {
-    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
+    "fastapi-dev": "pip install -r requirements.txt && python -m uvicorn api.index:app --reload",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
     "build": "next build",
@@ -11,18 +11,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
+    "@tailwindcss/forms": "^0.5.7",
     "@types/node": "20.2.4",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
-    "concurrently": "^8.0.1",
+    "@vercel/postgres": "^0.8.0",
+    "autoprefixer": "^10.4.20",
+    "bcrypt": "^5.1.1",
+    "clsx": "^2.1.1",
+    "concurrently": "^8.2.2",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
-    "postcss": "8.4.23",
+    "heroicons": "^2.1.5",
+    "install": "^0.13.0",
+    "next": "^14.2.14",
+    "next-auth": "^4.24.8",
+    "postcss": "8.4.47",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "shadcn": "^2.1.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "use-debounce": "^10.0.1",
+    "zod": "^3.23.8"
   }
 }

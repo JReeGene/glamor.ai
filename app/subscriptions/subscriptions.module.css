@@ -1,0 +1,48 @@
+/*Grid Layout */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+/*Subscription*/
+.centered{
+    text-align: center;
+}
+.cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: .7;
+    padding: .5em;
+}
+.cost > span{
+    margin-top: 0;
+}
+.cost-currency{
+    font-size: 2rem;
+    color: forestgreen;
+}
+.cost-dollars{
+    font-size: 4rem;
+    color: forestgreen;
+}
+.cost-cents{
+    font-size: 1.5rem;
+    align-self: flex-start;
+    color: forestgreen;
+}
+.cta-button{
+    display: block;
+    background-color: #3273eb;
+    color: white;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+.small{
+    text-transform: uppercase;
+    color: red;
+    font-weight: bolder;
+    letter-spacing: 1.5cqmax;
+}
